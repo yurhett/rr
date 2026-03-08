@@ -48,7 +48,7 @@ sync
 
 echo -n "."
 # Update HASH of new DSM zImage
-HASH="$(sha256sum "${ORI_ZIMAGE_FILE}" | awk '{print $1}')"
+HASH="$(sha256sum "${ORI_ZIMAGE_FILE}" 2>/dev/null | awk '{print $1}')"
 writeConfigKey "zimage-hash" "${HASH}" "${USER_CONFIG_FILE}"
 
 echo -n "."

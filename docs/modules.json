@@ -160,6 +160,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -203,6 +207,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -532,6 +540,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libiscsi": {
             "description": "iSCSI library functions",
             "depends": ""
@@ -567,6 +579,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -872,6 +888,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -879,6 +903,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -1250,6 +1282,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -1301,6 +1337,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -1710,6 +1750,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -1757,6 +1801,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -2302,6 +2350,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -2309,6 +2365,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -2796,6 +2860,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -2839,6 +2907,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -3116,6 +3188,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -3151,6 +3227,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -3456,6 +3536,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -3463,6 +3551,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -3814,6 +3910,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -3865,6 +3965,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -4222,6 +4326,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -4269,6 +4377,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -4814,6 +4926,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -4821,6 +4941,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -5292,6 +5420,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -5335,6 +5467,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -5612,6 +5748,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -5647,6 +5787,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -5952,6 +6096,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -5959,6 +6111,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -6310,6 +6470,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -6361,6 +6525,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -6718,6 +6886,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -6765,6 +6937,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -7310,6 +7486,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -7317,6 +7501,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -7788,6 +7980,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -7831,6 +8027,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -8108,6 +8308,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -8143,6 +8347,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -8448,6 +8656,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -8455,6 +8671,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -8806,6 +9030,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -8857,6 +9085,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -9214,6 +9446,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -9261,6 +9497,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -9806,6 +10046,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -9813,6 +10061,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -10284,6 +10540,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -10327,6 +10587,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -10616,6 +10880,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -10651,6 +10919,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -10956,6 +11228,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -10963,6 +11243,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -11310,6 +11598,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -11361,6 +11653,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -11730,6 +12026,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -11777,6 +12077,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -12322,6 +12626,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -12329,6 +12641,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -12796,6 +13116,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -12839,6 +13163,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -13136,6 +13464,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libiscsi": {
             "description": "iSCSI library functions",
             "depends": ""
@@ -13171,6 +13503,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -13476,6 +13812,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -13483,6 +13827,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -13826,6 +14178,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -13877,6 +14233,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -14254,6 +14614,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -14301,6 +14665,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -14846,6 +15214,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -14853,6 +15229,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -15364,6 +15748,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -15415,6 +15803,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -15852,6 +16244,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbcore,fixed_phy,of_mdio"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -15911,6 +16307,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -16556,6 +16956,22 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbnet,usbcore"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
             "depends": "cdrom"
@@ -17154,6 +17570,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -17205,6 +17625,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -17646,6 +18070,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbcore,fixed_phy,of_mdio"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -17705,6 +18133,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -18349,6 +18781,22 @@
         "smartpqi": {
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
+        },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbnet,usbcore"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -18964,6 +19412,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -19015,6 +19467,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -19452,6 +19908,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbcore,fixed_phy,of_mdio"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -19511,6 +19971,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -20156,6 +20620,22 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbnet,usbcore"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
             "depends": "cdrom"
@@ -20182,6 +20662,10 @@
         },
         "syno_sata_signal_test": {
             "description": "",
+            "depends": ""
+        },
+        "synobios": {
+            "description": "synobios\n",
             "depends": ""
         },
         "syscopyarea": {
@@ -20723,6 +21207,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -20766,6 +21254,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -21087,6 +21579,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libiscsi": {
             "description": "iSCSI library functions",
             "depends": ""
@@ -21122,6 +21618,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -21427,6 +21927,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -21434,6 +21942,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -21801,6 +22317,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -21852,6 +22372,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -22253,6 +22777,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -22300,6 +22828,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -22845,6 +23377,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -22852,6 +23392,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -23375,6 +23923,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -23422,6 +23974,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -23819,6 +24375,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbcore,fixed_phy,of_mdio"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -23874,6 +24434,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -24470,6 +25034,22 @@
         "smartpqi": {
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
+        },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbnet,usbcore"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -25081,6 +25661,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -25128,6 +25712,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -25525,6 +26113,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbcore,fixed_phy,of_mdio"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -25580,6 +26172,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -26177,6 +26773,22 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy,usbnet,usbcore"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
             "depends": "cdrom"
@@ -26207,6 +26819,10 @@
         },
         "syno_sata_signal_test": {
             "description": "",
+            "depends": ""
+        },
+        "synobios": {
+            "description": "synobios\n",
             "depends": ""
         },
         "syscopyarea": {
@@ -26747,6 +27363,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cn": {
             "description": "Generic userspace <-> kernelspace connector.",
             "depends": ""
@@ -26790,6 +27410,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -27087,6 +27711,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -27122,6 +27750,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -27427,6 +28059,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -27434,6 +28074,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -27781,6 +28429,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "cls_fw": {
             "description": "Classifier for fwmark (Compiled by RR for DSM)",
             "depends": ""
@@ -27832,6 +28484,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -28209,6 +28865,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -28256,6 +28916,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -28801,6 +29465,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -28808,6 +29480,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -29271,6 +29951,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "",
             "depends": ""
@@ -29322,6 +30006,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -29631,6 +30319,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libiscsi": {
             "description": "iSCSI library functions",
             "depends": ""
@@ -29666,6 +30358,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -29975,6 +30671,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -29982,6 +30686,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -30325,6 +31037,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "",
             "depends": ""
@@ -30384,6 +31100,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -30773,6 +31493,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -30820,6 +31544,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -31369,6 +32097,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -31376,6 +32112,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -31883,6 +32627,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -31934,6 +32682,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -32351,6 +33103,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": ""
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -32402,6 +33158,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -33038,6 +33798,22 @@
         "smartpqi": {
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
+        },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -33649,6 +34425,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -33700,6 +34480,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -34117,6 +34901,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": ""
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -34168,6 +34956,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -34805,6 +35597,22 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
             "depends": "cdrom"
@@ -34835,6 +35643,10 @@
         },
         "syno_sata_signal_test": {
             "description": "",
+            "depends": ""
+        },
+        "synobios": {
+            "description": "synobios\n",
             "depends": ""
         },
         "syscopyarea": {
@@ -35371,6 +36183,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial,usbcore"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "check_signature": {
             "description": "",
             "depends": ""
@@ -35422,6 +36238,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -35731,6 +36551,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbcore,libphy"
+        },
         "libfc": {
             "description": "libfc",
             "depends": "scsi_transport_fc"
@@ -35770,6 +36594,10 @@
         "m88ds3103": {
             "description": "Montage Technology M88DS3103 DVB-S/S2 demodulator driver",
             "depends": "regmap-i2c,dvb-core"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -36083,6 +36911,14 @@
             "description": "Marvell Yukon 2 Gigabit Ethernet driver",
             "depends": ""
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -36090,6 +36926,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,usbcore,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -36437,6 +37281,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "check_signature": {
             "description": "",
             "depends": ""
@@ -36496,6 +37344,10 @@
         "crc-itu-t": {
             "description": "CRC ITU-T V.41 calculations",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -36885,6 +37737,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "libphy"
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -36936,6 +37792,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "mdio": {
             "description": "Generic support for MDIO-compatible transceivers",
@@ -37489,6 +38349,14 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "softcursor": {
             "description": "Generic software cursor",
             "depends": "fb"
@@ -37496,6 +38364,14 @@
         "sp2": {
             "description": "CIMaX SP2/HF CI driver",
             "depends": "dvb-core"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -38007,6 +38883,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -38058,6 +38938,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -38475,6 +39359,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": ""
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -38530,6 +39418,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -39170,6 +40062,22 @@
         "smartpqi": {
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
+        },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
@@ -39785,6 +40693,10 @@
             "description": "USB CH341 Single Port Serial Driver (Compiled by RR for DSM)",
             "depends": "usbserial"
         },
+        "ch9200": {
+            "description": "QinHeng CH9200 USB Network device (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "check_signature": {
             "description": "check_signature find BIOS signatures (Compiled by RR for DSM)",
             "depends": ""
@@ -39836,6 +40748,10 @@
         "crc8": {
             "description": "CRC8 (by Williams, Ross N.) function",
             "depends": ""
+        },
+        "cx82310_eth": {
+            "description": "Conexant CX82310-based ADSL router USB ethernet driver (Compiled by RR for DSM)",
+            "depends": "usbnet"
         },
         "cxgb": {
             "description": "Chelsio 10Gb Ethernet Driver (Compiled by RR for DSM)",
@@ -40253,6 +41169,10 @@
             "description": "",
             "depends": "irqbypass"
         },
+        "lan78xx": {
+            "description": "LAN78XX USB 3.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": ""
+        },
         "lib80211": {
             "description": "common routines for IEEE802.11 drivers",
             "depends": ""
@@ -40308,6 +41228,10 @@
         "mac80211": {
             "description": "IEEE 802.11 subsystem",
             "depends": "cfg80211,libarc4"
+        },
+        "mcs7830": {
+            "description": "USB to network adapter MCS7830 (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
         },
         "mdev": {
             "description": "Mediated device Core Driver",
@@ -40949,6 +41873,22 @@
             "description": "Driver for Microchip Smart Family Controller version 2.1.30-031 (d-5b50ac9/s-61bca4b) (Compiled by RR for DSM)",
             "depends": "scsi_transport_sas"
         },
+        "smsc75xx": {
+            "description": "SMSC75XX USB 2.0 Gigabit Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "smsc95xx": {
+            "description": "SMSC95XX USB 2.0 Ethernet Devices (Compiled by RR for DSM)",
+            "depends": "usbnet"
+        },
+        "sr9700": {
+            "description": "SR9700 one chip USB 1.1 USB to Ethernet device from http://www.corechip-sz.com/ (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
+        "sr9800": {
+            "description": "SR9800 USB 2.0 USB2NET Dev : http://www.corechip-sz.com (Compiled by RR for DSM)",
+            "depends": "usbnet,mii"
+        },
         "sr_mod": {
             "description": "SCSI cdrom (sr) driver",
             "depends": "cdrom"
@@ -40979,6 +41919,10 @@
         },
         "syno_sata_signal_test": {
             "description": "",
+            "depends": ""
+        },
+        "synobios": {
+            "description": "synobios\n",
             "depends": ""
         },
         "syscopyarea": {

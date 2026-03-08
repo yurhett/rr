@@ -53,11 +53,20 @@ function dsmIsUpgraded() {
   RAMDISK_HASH="$(readConfigKey "ramdisk-hash" "${USER_CONFIG_FILE}")"
   NEW_ZIMAGE_HASH="$(sha256sum "${ORI_ZIMAGE_FILE}" 2>/dev/null | awk '{print $1}')"
   NEW_RAMDISK_HASH="$(sha256sum "${ORI_RDGZ_FILE}" 2>/dev/null | awk '{print $1}')"
-  if [ "${ZIMAGE_HASH}" != "${NEW_ZIMAGE_HASH}" ] || [ "${RAMDISK_HASH}" != "${NEW_RAMDISK_HASH}" ]; then
+  if [ ! "${ZIMAGE_HASH}" = "${NEW_ZIMAGE_HASH}" ] || [ ! "${RAMDISK_HASH}" = "${NEW_RAMDISK_HASH}" ]; then
     return 0
-  else
-    return 1
   fi
+
+  local MACHINE_KEY_HASH SONE_9_BAK_HASH NEW_MACHINE_KEY_HASH NEW_SONE_9_BAK_HASH
+  MACHINE_KEY_HASH="$(readConfigKey "machine_key-hash" "${USER_CONFIG_FILE}")"
+  SONE_9_BAK_HASH="$(readConfigKey "sone_9_bak-hash" "${USER_CONFIG_FILE}")"
+  NEW_MACHINE_KEY_HASH="$(sha256sum "/mnt/p2/machine.key" 2>/dev/null | awk '{print $1}')"
+  NEW_SONE_9_BAK_HASH="$(sha256sum "/mnt/p2/Sone.9.bak" 2>/dev/null | awk '{print $1}')"
+  if [ ! "${MACHINE_KEY_HASH}" = "${NEW_MACHINE_KEY_HASH}" ] || [ ! "${SONE_9_BAK_HASH}" = "${NEW_SONE_9_BAK_HASH}" ]; then
+    return 0
+  fi
+
+  return 1
 }
 
 ###############################################################################

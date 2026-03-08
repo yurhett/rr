@@ -203,7 +203,7 @@ mkdir -p "${RAMDISK_PATH}/usr/rr"
 } >"${RAMDISK_PATH}/usr/rr/VERSION"
 BACKUP_PATH="${RAMDISK_PATH}/usr/rr/backup"
 rm -rf "${BACKUP_PATH}"
-for F in "${USER_GRUB_CONFIG}" "${USER_CONFIG_FILE}" "${USER_LOCALE_FILE}" "${USER_UP_PATH}" "${SCRIPTS_PATH}"; do
+for F in "${USER_GRUB_CONFIG}" "${USER_CONFIG_FILE}" "${USER_LOCALE_FILE}" "${USER_UP_PATH}" "${SCRIPTS_PATH}" "/mnt/p2/machine.key" "/mnt/p2/Sone.9.bak"; do
   if [ -f "${F}" ]; then
     FD="$(dirname "${F}")"
     mkdir -p "${FD/\/mnt/${BACKUP_PATH}}"
@@ -248,8 +248,13 @@ sync
 rm -rf "${RAMDISK_PATH}"
 
 # Update SHA256 hash
-RAMDISK_HASH_CUR="$(sha256sum "${ORI_RDGZ_FILE}" | awk '{print $1}')"
+RAMDISK_HASH_CUR="$(sha256sum "${ORI_RDGZ_FILE}" 2>/dev/null | awk '{print $1}')"
 writeConfigKey "ramdisk-hash" "${RAMDISK_HASH_CUR}" "${USER_CONFIG_FILE}"
+
+MACHINE_KEY_HASH="$(sha256sum "/mnt/p2/machine.key" 2>/dev/null | awk '{print $1}')"
+writeConfigKey "machine_key-hash" "${MACHINE_KEY_HASH}" "${USER_CONFIG_FILE}"
+SONE_9_BAK_HASH="$(sha256sum "/mnt/p2/Sone.9.bak" 2>/dev/null | awk '{print $1}')"
+writeConfigKey "sone_9_bak-hash" "${SONE_9_BAK_HASH}" "${USER_CONFIG_FILE}"
 
 echo -n "."
 echo

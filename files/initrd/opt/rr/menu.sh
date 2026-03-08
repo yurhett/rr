@@ -260,7 +260,7 @@ function reconfiguringM() {
   PLATFORM="${respP}"
   writeConfigKey "platform" "${PLATFORM}" "${USER_CONFIG_FILE}"
 
-  if [ "${MODEL}" != "${BASEMODEL}" ]; then
+  if [ ! "${MODEL}" = "${BASEMODEL}" ]; then
     MODELID=""
     PRODUCTVER=""
     BUILDNUM=""
@@ -413,7 +413,7 @@ function reconfiguringV() {
 
   PRODUCTVER=${selver}
   writeConfigKey "productver" "${PRODUCTVER}" "${USER_CONFIG_FILE}"
-  if [ "${BASEPATURL}" != "${paturl}" ] || [ "${BASEPATSUM}" != "${patsum}" ]; then
+  if [ ! "${BASEPATURL}" = "${paturl}" ] || [ ! "${BASEPATSUM}" = "${patsum}" ]; then
     BUILDNUM=""
     SMALLNUM=""
     writeConfigKey "buildnum" "${BUILDNUM}" "${USER_CONFIG_FILE}"
@@ -459,7 +459,7 @@ function reconfiguringV() {
   writeConfigKey "modules" "{}" "${USER_CONFIG_FILE}"
   mergeConfigModules "$(getAllModules "${PLATFORM}" "${KPRE:+${KPRE}-}${KVER}" | awk '{print $1}')" "${USER_CONFIG_FILE}"
 
-  if [ "${BASEPATURL}" != "${paturl}" ] || [ "${BASEPATSUM}" != "${patsum}" ]; then
+  if [ ! "${BASEPATURL}" = "${paturl}" ] || [ ! "${BASEPATSUM}" = "${patsum}" ]; then
     # Remove old files
     rm -f "${ORI_ZIMAGE_FILE}" "${ORI_RDGZ_FILE}" "${MOD_ZIMAGE_FILE}" "${MOD_RDGZ_FILE}" >/dev/null 2>&1 || true
     rm -f "${PART1_PATH}/grub_cksum.syno" "${PART1_PATH}/GRUB_VER" "${PART2_PATH}/"* >/dev/null 2>&1 || true
@@ -1421,7 +1421,7 @@ function extractDsmFiles() {
       echo -e "$(TEXT "The current network status is unknown, using the default mirror.")"
     fi
     mirror="$(echo "${PATURL}" | sed 's|^http[s]*://\([^/]*\).*|\1|')"
-    if echo "${mirrors[@]}" | grep -wq "${mirror}" && [ "${mirror}" != "${fastest}" ]; then
+    if echo "${mirrors[@]}" | grep -wq "${mirror}" && [ ! "${mirror}" = "${fastest}" ]; then
       printf "$(TEXT "Based on the current network situation, switch to %s mirror to downloading.\n")" "${fastest}"
       PATURL="$(echo "${PATURL}" | sed "s/${mirror}/${fastest}/")"
     fi
@@ -1453,7 +1453,7 @@ function extractDsmFiles() {
     PATSUM="${PATMD5}"
     writeConfigKey "patsum" "${PATMD5}" "${USER_CONFIG_FILE}"
   else
-    if [ "${PATMD5}" != "${PATSUM}" ]; then
+    if [ ! "${PATMD5}" = "${PATSUM}" ]; then
       echo -e "$(TEXT "md5 hash of pat not match, Please reget pat data from the version menu and try again!")" >"${LOG_FILE}"
       return 1
     fi
@@ -2337,7 +2337,7 @@ function editUserConfig() {
   BUILDNUM="$(readConfigKey "buildnum" "${USER_CONFIG_FILE}")"
   SN="$(readConfigKey "sn" "${USER_CONFIG_FILE}")"
 
-  if [ "${MODEL}" != "${OLDMODEL}" ] || [ "${PRODUCTVER}" != "${OLDPRODUCTVER}" ] || [ "${BUILDNUM}" != "${OLDBUILDNUM}" ]; then
+  if [ ! "${MODEL}" = "${OLDMODEL}" ] || [ ! "${PRODUCTVER}" = "${OLDPRODUCTVER}" ] || [ ! "${BUILDNUM}" = "${OLDBUILDNUM}" ]; then
     # Remove old files
     rm -f "${MOD_ZIMAGE_FILE}"
     rm -f "${MOD_RDGZ_FILE}"
@@ -2405,6 +2405,9 @@ function tryRecoveryDSM() {
       && [ -n "${R_PRODUCTVER}" ] && arrayExistItem "${R_PRODUCTVER}" ${VS} \
       && [ -n "${R_BUILDNUM}" ] && [ -n "${R_SMALLNUM}" ]; then
       cp -rf "${TMP_PATH}/mdX/usr/rr/backup/p1/"* "${PART1_PATH}"
+      if [ -d "${TMP_PATH}/mdX/usr/rr/backup/p2" ]; then
+        cp -rf "${TMP_PATH}/mdX/usr/rr/backup/p2/"* "${PART2_PATH}"
+      fi
       if [ -d "${TMP_PATH}/mdX/usr/rr/backup/p3" ]; then
         cp -rf "${TMP_PATH}/mdX/usr/rr/backup/p3/"* "${PART3_PATH}"
       fi
@@ -3544,7 +3547,7 @@ function settingsMenu() {
 # 4 - attachment name
 function downloadExts() {
   PROXY="$(readConfigKey "github_proxy" "${USER_CONFIG_FILE}")"
-  [ -n "${PROXY}" ] && [ "${PROXY: -1}" != "/" ] && PROXY="${PROXY}/"
+  [ -n "${PROXY}" ] && [ ! "${PROXY: -1}" = "/" ] && PROXY="${PROXY}/"
   T="$(printf "$(TEXT "Update %s")" "${1}")"
   MSG="$(TEXT "Checking last version ...")"
   DIALOG --title "${T}" \
